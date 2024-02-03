@@ -1096,13 +1096,17 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about{
+  background-color: rgb(247, 247, 247);
+}
 .about .about-img {
   position: relative;
   margin: 60px 0 0 60px;
 }
 .about-para{
-  padding-top: 6px;
-  font-size: large;
+  margin-top:60px;
+  font-size: 1.1em;
+  text-align: justify;
 }
 
 .about .about-img:before {
@@ -1116,11 +1120,11 @@ section {
 
 @media (max-width: 575px) {
   .about .about-img {
-    margin: 30px 0 0 30px;
+    margin: 0px 0 0 0px;
   }
 
   .about .about-img:before {
-    inset: -30px 0 0 -30px;
+    inset: 0px 0 0 0px;
   }
 }
 
