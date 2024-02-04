@@ -1096,16 +1096,17 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about{
-  background-color: rgb(247, 247, 247);
-}
+
+
+
 .about .about-img {
+ 
   position: relative;
   margin: 60px 0 0 60px;
 }
 .about-para{
   margin-top:60px;
-  font-size: 1.1em;
+  font-size: 1em;
   text-align: justify;
 }
 
@@ -2321,7 +2322,7 @@ section {
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
-  border-radius: 0px;
+  border-radius: 10px;
   box-shadow: none;
   font-size: 14px;
 }
@@ -2349,7 +2350,7 @@ section {
   padding: 13px 50px;
   color: var(--color-white);
   transition: 0.4s;
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -3009,6 +3010,11 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
+.foot-con-link{
+  color: rgb(255, 255, 255);
+}
+
 .footer {
   color: var(--color-white);
   font-size: 14px;
@@ -3057,7 +3063,7 @@ section {
   content: "";
   position: absolute;
   display: block;
-  width: 20px;
+  width: 86px;
   height: 2px;
   background: var(--color-primary);
   bottom: 0;
@@ -3096,6 +3102,7 @@ section {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  margin-left: 3px;
 }
 
 .footer .footer-content .footer-links ul a:hover {
