@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image and Text Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .image-container {
+      float: left;
+      margin-right: 20px;
+    }
+
+    .image-container img {
+        height: 200px;
+        width: 200px;
+      border-radius: 8px;
+    }
+
+    .text-container {
+      overflow: hidden;
+    }
+    .text-container p{
+        font-size: larger;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+
+      .image-container {
+        float: none;
+       
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .text-container {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="image-container">
+      <img src="/assets/img/cooling-tower/main.jpg" alt="Image Description">
+    </div>
+    <div class="text-container">
+   
+      <p>Cooling Towers are an essential component of many industrial
+        processes, as they efficiently remove
+        excess heat from water systems. These
+        towers operate by using a combination of
+        evaporation and air flow to cool the water,
+        which is then recirculated back into the
+        system. They are commonly used in power
+        plants, chemical processing facilities, and
+        other industrial settings where heat
+        removal is critical. Our company specializes
+        in providing high-quality cooling tower
+        solutions that are tailored to meet the
+        unique needs of each client. With years of
+        experience and a commitment to excellence, we are dedicated to
+        providing top-notch service and support to ensure that our customers'
+        systems run smoothly and efficiently.</p>
+    </div>
+  </div>
+
+</body>
+</html>

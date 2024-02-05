@@ -192,6 +192,11 @@ section {
   cursor: pointer;
 }
 
+#options-button:hover {
+  background-color: #65a7d3;
+ 
+}
+
 #options-menu {
   display: none;
   position: absolute;
