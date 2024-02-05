@@ -84,7 +84,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-building icon"></i></div>
-              <h4><a href="/product.html" class="stretched-link">Cooling Tower</a></h4>
+              <h4><a  class="stretched-link">Cooling Tower</a></h4>
               <p>Cooling Towers extract excess heat from industrial water systems.</p>
             </div>
           </div><!-- End Service Item -->
@@ -92,7 +92,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-shop icon"></i></div>
-              <h4><a href="/product.html" class="stretched-link">PVC Fills</a></h4>
+              <h4><a  class="stretched-link">PVC Fills</a></h4>
               <p>Cooling tower fills maximize water-air contact for optimal heat exchange.</p>
             </div>
           </div><!-- End Service Item -->
@@ -100,7 +100,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-thermometer-snow icon"></i></div>
-              <h4><a href="/product.html" class="stretched-link">Chiller Plant</a></h4>
+              <h4><a  class="stretched-link">Chiller Plant</a></h4>
               <p>A chiller controls the temperature by circulating a liquid.</p>
             </div>
           </div><!-- End Service Item -->
@@ -108,7 +108,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-tools icon"></i></div>
-              <h4><a href="/product.html" class="stretched-link">RO treatment Plant</a></h4>
+              <h4><a class="stretched-link">RO treatment Plant</a></h4>
               <p>The RO plant purifies water through the process of reverse osmosis.</p>
             </div>
           </div><!-- End Service Item -->
@@ -123,7 +123,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>About Us</h2>
+          <h2><em>About Us</em></h2>
           <p><span style="color: rgb(14, 162, 189, 0.6);">CoolDeck</span> Where innovation meets durability, delivering sustainable cooling solutions for a cooler planet.</p>
         </div>
 
@@ -163,7 +163,7 @@
 
 
     <div class="section-header" style="margin-top: 55px;">
-      <h2>Our Clients</h2>
+      <h2><em>Our Clients</em></h2>
       <p>Our success is built on the trust of our valuable clients, and we are committed to delivering exceptional service tailored to their needs.</p>
 
     </div>
@@ -206,7 +206,7 @@
         <div class="row g-5">
 
           <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-            <h3>For all inquiries and information, <em>Contact Us </em>.</h3>
+            <h3>For all inquiries and information, Contact Us.</h3>
             <p>CoolDeck Cooling System Private Limited welcomes all inquiries and requests for information. Our dedicated team is ready to address your cooling system needs promptly and efficiently. Feel free to contact us for comprehensive solutions tailored to your requirements. At CoolDeck, we prioritize excellence in delivering reliable cooling solutions.</p>
             <a class="cta-btn align-self-start" href="tel:+919971999150">Call To Action</a>
           </div>
@@ -228,7 +228,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Our Services</h2>
+          <h2><em>Our Services</em></h2>
           <p>We excel in manufacturing and repairing all types of cooling towers for peak performance.</p>
         </div>
 
@@ -350,7 +350,7 @@
       <div class="container">
 
         <div class="section-header">
-          <h2>Contact Us</h2>
+          <h2><em>Contact Us</em></h2>
           <p>For all inquiries and information, please feel free to contact us at CoolDeck Cooling System Private Limited.</p>
         </div>
 
@@ -471,8 +471,8 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h4>Subscribe!</h4>
+            <p>Subscribe to CoolDeck for exclusive offers and deals!</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -505,7 +505,21 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <a href="tel:+919971999150" class="call-btn"><i class="bi bi-telephone"></i></a>
+
+  <div id="floating-button" onclick="toggleOptions()"><i class="bi bi-telephone"></i></div>
+
+  <div id="options-container">
+    <div class="option"><a href="tel:+919971999150">+91 9971999150</a></div>
+    <div class="option"><a href="tel:+917982939847">+91 7982939847</a></div>
+    <div class="option"><a href="tel:+919971148602">+91 9971148602</a></div>
+  </div>
+  <script>
+    function toggleOptions() {
+      var optionsContainer = document.getElementById("options-container");
+      optionsContainer.style.display = (optionsContainer.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
 
   <div id="preloader"></div>
 
