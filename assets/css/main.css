@@ -3115,14 +3115,7 @@ width: 100%; /* Set the width to 100% */
   color: var(--color-white);
   font-size: 14px;
 }
-.footer .copyright{
-  align-items: center;
-  margin-left: 525px;
-}
-.footer .credits{
-  align-items: center;
-  margin-left: 525px;
-}
+
 
 .footer .footer-content {
   background: var(--color-secondary);
