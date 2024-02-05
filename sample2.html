@@ -3,80 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-0UqYZV9HzYB/2fMVSQY5O5aMc45s2OKNQ8c0owNia1Lml8OBLaROe/DyhLHV5RJvexFDbZb+3UinrjZ5ZzZbUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Floating Button</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
     }
 
-    #floating-button {
+    #options-container {
       position: fixed;
-      bottom: 20px;
-      left: 20px;
+      bottom: 10px;
+      left: 10px;
+      z-index: 1000;
+    }
+
+    #options-button {
       background-color: #3498db;
       color: #fff;
       padding: 10px;
-      border-radius: 5px;
+      border: none;
       cursor: pointer;
-      display: flex;
-      align-items: center;
     }
 
-    #floating-button i {
-      margin-right: 5px;
-    }
-
-    #options-container {
+    #options-menu {
       display: none;
-      position: fixed;
-      bottom: 60px;
-      left: 30px;
+      position: absolute;
+      bottom: 40px;
+      width: 200px; /* Adjusted width */
       background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
-    .option {
-      margin-bottom: 10px;
+    #options-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
-    .option a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      display: block;
-      padding: 5px;
-      transition: background-color 0.3s;
+    #options-menu li {
+      width: 100%; /* Set the width to 100% */
+      padding: 15px; /* Adjusted padding */
+      cursor: pointer;
     }
 
-    .option a:hover {
+    #options-menu li:hover {
       background-color: #f0f0f0;
     }
   </style>
+  <title>Options Button</title>
 </head>
 <body>
 
-  <div id="floating-button" onclick="toggleOptions()">
-    <i class="fas fa-cogs"></i> 
+<div id="options-container">
+  <button id="options-button">Options</button>
+  <div id="options-menu">
+    <ul>
+      <li>Option 1</li>
+      <li>Option 2</li>
+      <li>Option 3</li>
+    </ul>
   </div>
+</div>
 
-  <div id="options-container">
-    <div class="option"><a href="https://example.com">Option 1</a></div>
-    <div class="option"><a href="https://example.com">Option 2</a></div>
-    <div class="option"><a href="https://example.com">Option 3</a></div>
-  </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const optionsButton = document.getElementById("options-button");
+    const optionsMenu = document.getElementById("options-menu");
 
-  <script>
-    function toggleOptions() {
-      var optionsContainer = document.getElementById("options-container");
-      optionsContainer.style.display = (optionsContainer.style.display === "block") ? "none" : "block";
-    }
-  </script>
+    // Toggle options menu visibility
+    optionsButton.addEventListener("click", function () {
+      optionsMenu.style.display = optionsMenu.style.display === "block" ? "none" : "block";
+    });
+
+    // Close options menu when clicking anywhere on the page
+    document.addEventListener("click", function (event) {
+      if (!optionsButton.contains(event.target) && !optionsMenu.contains(event.target)) {
+        optionsMenu.style.display = "none";
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
