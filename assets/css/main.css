@@ -177,8 +177,8 @@ section {
 #options-container {
   position: fixed;
   bottom: 15px; /* Adjusted from bottom to top */
-  left: 15px;
-  z-index: 1000;
+  right: 15px;
+  z-index: 99;
 }
 
 #options-button {
@@ -195,7 +195,8 @@ section {
 #options-menu {
   display: none;
   position: absolute;
-  width: 150px; /* Adjusted width */
+  width: 150px;
+  right: 10px; /* Adjusted width */
   bottom: 60px; /* Adjusted from bottom to top */
   background-color: #f8f8f8;
   border-radius: 5px;
@@ -224,7 +225,7 @@ width: 100%; /* Set the width to 100% */
 }
 
 
-/*------CALL OPTION------*/
+/*------CALL OPTION END------*/
 
 
 
@@ -250,7 +251,7 @@ width: 100%; /* Set the width to 100% */
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   z-index: 995;
   background: var(--color-primary);
@@ -428,8 +429,8 @@ width: 100%; /* Set the width to 100% */
   .navbar .dropdown .active,
   .navbar .dropdown .active:focus,
   .navbar .dropdown:hover>a {
-    color: var(--color-white);
-    background: var(--color-secondary);
+    color:#0ea2bd;
+    
   }
 
   .navbar .dropdown ul {
@@ -437,12 +438,13 @@ width: 100%; /* Set the width to 100% */
     position: absolute;
     left: 0;
     top: 100%;
+    border-radius: 10px;
     margin: 0;
-    padding: 0 0 10px 0;
+    padding: 0 0 0px 0;
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: var(--color-secondary);
+    background: rgba(0, 0, 0, 0.8) ;
     transition: 0.3s;
   }
 
@@ -455,7 +457,7 @@ width: 100%; /* Set the width to 100% */
     font-size: 15px;
     text-transform: none;
     font-weight: 400;
-    color: rgba(var(--color-white-rgb), 0.5);
+    color: rgba(var(--color-white-rgb), 0.8);
   }
 
   .navbar .dropdown ul a i {
@@ -466,6 +468,7 @@ width: 100%; /* Set the width to 100% */
   .navbar .dropdown ul .active,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
+    border-radius: 10px;
     color: var(--color-white);
     background: var(--color-primary);
   }
@@ -3111,6 +3114,14 @@ width: 100%; /* Set the width to 100% */
 .footer {
   color: var(--color-white);
   font-size: 14px;
+}
+.footer .copyright{
+  align-items: center;
+  margin-left: 525px;
+}
+.footer .credits{
+  align-items: center;
+  margin-left: 525px;
 }
 
 .footer .footer-content {
