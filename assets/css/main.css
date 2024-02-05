@@ -176,8 +176,8 @@ section {
 
 #options-container {
   position: fixed;
-  bottom: 20px; /* Adjusted from bottom to top */
-  left: 20px;
+  bottom: 15px; /* Adjusted from bottom to top */
+  left: 15px;
   z-index: 1000;
 }
 
@@ -212,6 +212,10 @@ section {
 width: 100%; /* Set the width to 100% */
   padding: 10px;
   cursor: pointer;
+}
+
+#options-menu a{
+  color:black;
 }
 
 
@@ -1208,6 +1212,9 @@ width: 100%; /* Set the width to 100% */
 @media (max-width: 575px) {
   .about .about-img {
     margin: 0px 0 0 0px;
+  }
+  .about-para{
+    text-align: left;
   }
 
   .about .about-img:before {
