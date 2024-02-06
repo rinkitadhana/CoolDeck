@@ -12,8 +12,8 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 10px;
-    height: 10px;
+    bottom: 5px;
+    height: 5px;
     background: rgba(var(--color-primary-rgb), 0.5);
     z-index: -1;
   }
@@ -45,19 +45,104 @@
   }
   
 
-  /* COOLING TOWER */
-  .cooling-tower-para{
-    padding: 0px 10px 0px 10px;
-    text-align: justify;
+
+
+
+
+
+
+/* INFO EVERY COLUM */
+
+     /* Container styling */
+     .content-container {
+      max-width: 1400px; /* Increased width */
+      margin: 0 auto;
+      overflow: hidden;
   }
 
-  @media (min-width: 1280px) {
-    .cooling-tower-para{
-        padding: 0px 50px 0px 50px;
+  /* Box styling */
+  .box {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+  }
 
-        text-align: justify;
-      }
+  /* Image styling */
+  .image-container {
     
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
   }
 
-  
+  .image-container img {
+      
+      height: auto;
+      display: block;
+  }
+
+  /* Text styling */
+  .text-container {
+      float: right;
+      width: 50%;
+      font-size: 1.0em;
+      box-sizing: border-box;
+      padding: 20px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+      .image-container,
+      .text-container {
+          width: 100%;
+          float: none;
+      }
+  }
+
+
+
+
+  /* OTHER SPARE PARTS */
+
+
+.other-spare-parts p{
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
+
+  /* CSS for Image Gallery */
+  .unique-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.unique-image-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.unique-image-container p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.unique-image-container:hover img {
+    transform: scale(1.1);
+}
+
+.unique-image-gallery {
+    padding: 40px 90px 0px 90px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .unique-image-container {
+        width: 100%;
+    }
+}
