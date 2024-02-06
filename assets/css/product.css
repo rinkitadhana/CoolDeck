@@ -1,7 +1,52 @@
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
-  
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.product-header h2 em {
+  font-style: normal;
+  position: relative;
+}
+
+.product-header h2 em:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 10px;
+  background: rgba(var(--color-primary-rgb), 0.5);
+  z-index: -1;
+}
+
+.product-header {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.product-header h2 {
+  font-size: 39px;
+  font-weight: 600;
+
+  color: var(--color-secondary);
+}
+
+.product-header p {
+  margin: 0 auto;
+  color: var(--color-secondary-light);
+}
+
+@media (min-width: 1280px) {
+  .product-header p {
+    max-width: 80%;
+  }
+}  
+/* 
+
+
   .product-header h2 em {
     font-style: normal;
     position: relative;
@@ -44,7 +89,7 @@
       }
   }
   
-
+ */
 
 
 
