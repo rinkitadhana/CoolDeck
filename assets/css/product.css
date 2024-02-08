@@ -3,10 +3,11 @@
 --------------------------------------------------------------*/
 .eight h1 {
   text-align:center;
+  margin-bottom: 30px;
  
   text-transform:uppercase;
   font-size:26px; letter-spacing:1px;
-  
+  font-weight: 550;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: 16px 0;
@@ -16,7 +17,7 @@
 .eight h1:after,.eight h1:before {
   content: " ";
   display: block;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #cccccc;
   background-color:#f8f8f8;
 }
 
@@ -66,102 +67,181 @@
     }
 }
 
+/*ALL PRODUCT*/
 
-/* ///// */
 
-.all-product .border-edit{
-  
-    
-  
+.custom-container {
+  border-radius: 7px;
+  width: 90%; /* Width covering 80% of the page */
+  margin: 0 auto; /* Centering the box horizontally */
+  border: 2px solid #ccc;
+  padding: 20px;
+  overflow: hidden; /* To contain floated elements */
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Include padding and border in the width */
 }
-.all-product .all-product-img {
- 
-  position: relative;
-  margin: 60px 0 0 60px;
+
+.custom-container:hover {
+  transform: scale(1.0); /* Increase scale on hover */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
-.all-product-para{
-  margin-top:60px;
-  font-size: 1em;
+
+.custom-image {
+  float: left;
+  width: 220px; /* Width of the image */
+  margin-right: 20px;
+}
+
+.custom-image img {
+  width: 100%; /* Make image responsive */
+}
+
+.custom-text {
+  overflow: hidden;
+}
+.custom-text p {
   text-align: justify;
 }
 
-.all-product .all-product-img:before {
-  position: absolute;
-  inset: -60px 0 0 -60px;
-  z-index: -1;
-  content: "";
-  background: url("../img/all-product-bg.png") top left;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 575px) {
-  .all-product .all-product-img {
-    margin: 0px 0 0 0px;
+@media (max-width: 768px) {
+  .custom-container {
+    width: 100%; /* Full width on smaller screens */
   }
-  .all-product-para{
+
+  .custom-image {
+      width: 250px;
+    float: none; /* Remove float on smaller screens */
+    margin: 0 auto; /* Center image */
+    display: block; /* Make image a block element */
+  }
+
+  .custom-text {
+    margin-top: 20px;
     text-align: left;
-  }
-
-  .all-product .all-product-img:before {
-    inset: 0px 0 0 0px;
+    text-align: center; /* Center text */
   }
 }
 
-.all-product h3 {
-  color: var(--color-secondary);
-  font-family: var(--font-secondary);
-  font-weight: 300;
-  font-size: 32px;
+
+
+/*aaaaaaaaaaaaa*/
+#a{
+  margin-top: 50px;
+}
+
+/*cooling tower below text*/
+.outer-box {
+  
+  width: 90%; /* Set width to 90% */
+  margin: 30px auto; /* Center the box horizontally */
+  border: none;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(54, 54, 54, 0.5);
+}
+
+.inner-box {
+  flex: 1;
+  padding: 10px;
+}
+
+.left-box, .right-box {
+  background-color: white;
+  border: solid 1px rgb(82, 82, 82,0.5);
+  border-radius: 5px;
+  padding: 10px;
+  
+
+}
+
+
+.left-text, .right-text {
+  margin: 0;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  .outer-box {
+    flex-direction: column; /* Stack boxes vertically */
+  }
+}
+
+/*Cooling tower pics*/
+.my-container {
+  max-width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.my-image {
+  border: solid 1px rgb(172, 172, 172);
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px rgb(153, 153, 153);
+  width: calc(33.33% - 20px); /* 20px is the margin between images */
   margin-bottom: 20px;
 }
+.my-image img {
+  width: 100%;
+  height: auto;
+}
+.my-image-caption li {
+  text-align: left;
+  margin-top: 5px;
+}
+.my-image-caption h5 {
+  margin-top: 15px;
+  font-weight: 550;
+  text-align: center;
+  font-size: larger;
+}
 
+/* Responsive styles */
 @media (max-width: 768px) {
-  .all-product h3 {
-    font-size: 28px;
+  .my-image {
+    width: calc(50% - 20px); /* Two images per row */
   }
 }
 
-.all-product .nav-pills {
-  border-bottom: 1px solid rgba(var(--color-secondary-rgb), 0.2);
-}
-
-.all-product .nav-pills li+li {
-  margin-left: 40px;
-}
-
-.all-product .nav-link {
-  background: none;
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--color-secondary);
-  padding: 12px 0;
-  margin-bottom: -2px;
-  border-radius: 0;
-  font-family: var(--font-secondary);
-}
-
-.all-product .nav-link.active {
-  color: var(--color-primary);
-  background: none;
-  border-bottom: 3px solid var(--color-primary);
-}
-
-@media (max-width: 575px) {
-  .all-product .nav-link {
-    font-size: 16px;
+@media (max-width: 480px) {
+  .my-image {
+    width: 100%; /* One image per row on smaller screens */
   }
 }
 
-.all-product .tab-content h4 {
-  font-size: 18px;
-  margin: 0;
-  font-weight: 700;
-  color: var(--color-secondary);
+/*PVC TYPE*/
+
+.yo-container {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.yo-image-container {
+  border: solid 1px rgb(173, 173, 173);
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgb(138, 138, 138);
+  margin: 20px;
+  text-align: center;
+}
+.yo-image-container img {
+  width: 300px; /* Adjust as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.yo-image-container ul {
+  margin-top: 20px;
+  text-align: left;
 }
 
-.all-product .tab-content i {
-  font-size: 22px;
-  line-height: 0;
-  margin-right: 8px;
-  color: var(--color-primary);
+.yo-image-container h5{
+  font-weight: 550;
+}
+
+.pvc-type{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 550;
 }
