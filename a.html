@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Left Slider</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .slider-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100px; /* Adjust width as needed */
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: transform 0.3s ease;
+        transform: translateX(-100%);
+    }
+
+    .slider-container.open {
+        transform: translateX(0);
+    }
+
+    .slider-content {
+        overflow-y: auto;
+        height: calc(100% - 40px); /* Adjust height according to padding */
+    }
+
+    .toggle-button {
+        position: absolute;
+        top: 20px;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: #555;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="slider-container" id="slider">
+    <div class="slider-content">
+        <p>This is the content of the slider. You can add any text or other elements here.</p>
+    </div>
+    <button class="toggle-button" onclick="toggleSlider()">X</button>
+</div>
+
+<script>
+    function toggleSlider() {
+        const slider = document.getElementById('slider');
+        slider.classList.toggle('open');
+    }
+</script>
+
+</body>
+</html>

@@ -1164,6 +1164,13 @@ width: 100%; /* Set the width to 100% */
   font-size: 36px;
   transition: 0.3s;
 }
+.featured-services .service-item .icon img {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 42px;
+  width: 42px;
+  transition: 0.3s;
+}
 
 .featured-services .service-item h4 {
   font-weight: 600;
@@ -1194,22 +1201,81 @@ width: 100%; /* Set the width to 100% */
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-
+.about{
+  /* background-color: #fafafa; */
+}
 
 
 .about .about-img {
- 
   position: relative;
-  margin: 60px 0 0 60px;
+  margin: 10px 0 0 0px;
 }
 .about-para{
+  border: solid 2px rgb(190, 190, 190);
   margin-top:60px;
+  border-radius: 10px;
+  padding-top: 20px;
   font-size: 1em;
   text-align: justify;
 }
 
+.about-para1, .about-para2{
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  margin: 30px 0px 0px 20px ;
+  border: solid 2px rgb(190, 190, 190);
+  text-align: justify;
+
+} 
+.about-para1:hover {
+  box-shadow: 0px 0px 10px rgba(121, 121, 121, 0.418);
+
+}
+.about-para2:hover {
+  box-shadow: 0px 0px 10px rgba(121, 121, 121, 0.418);
+
+}
+
+
+.about-activity{
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  margin: 30px 0px 0px 20px ;
+  border: solid 2px rgb(190, 190, 190);
+
+}
+.about-activity h4{
+  font-weight:600;
+}
+
+.about-para em{
+  font-weight: 600;
+  font-style: normal;
+}
+
+.about-activity:hover {
+  box-shadow: 0px 0px 10px rgba(121, 121, 121, 0.418);
+
+}
+
+.about-para:hover {
+  box-shadow: 0px 0px 10px rgba(121, 121, 121, 0.418);
+
+}
+
+.about .about-img img{
+  border: solid 2px #0ea3bd33;
+  border-radius: 10px;
+
+}
+
+.about .about-img img:hover{
+  box-shadow: 0px 0px 10px #0ea3bd94;
+
+}
 .about .about-img:before {
   position: absolute;
+  
   inset: -60px 0 0 -60px;
   z-index: -1;
   content: "";
@@ -1222,12 +1288,26 @@ width: 100%; /* Set the width to 100% */
     margin: 0px 0 0 0px;
   }
   .about-para{
-    text-align: left;
+    text-align: justify;
+    
   }
+ 
 
   .about .about-img:before {
     inset: 0px 0 0 0px;
   }
+
+  .about-activity{
+  
+    margin: 30px 0px 0px 0px ;
+   
+  
+  }
+  .about-para1, .about-para2{
+    margin: 30px 0px 0px 0px ;
+
+  }
+
 }
 
 .about h3 {
@@ -1697,6 +1777,8 @@ width: 100%; /* Set the width to 100% */
   left: calc(50% - 36px);
   border: 6px solid var(--color-white);
 }
+
+
 
 .services .details h3 {
   color: var(--color-default);

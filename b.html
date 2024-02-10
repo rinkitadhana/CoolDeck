@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding Sidebar</title>
+  <style>
+   
+
+    .slider-container {
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider {
+      position: fixed;
+      top: 0;
+      left: -90%;
+      width: 90%;
+      height: 100%;
+      background-color: #fff;
+      transition: left 0.5s ease-in-out;
+      z-index: 1010;
+    }
+
+    .open-slider-btn {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      margin-left: 0px;
+
+      width: 100px;
+      height: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transform: rotate(-90deg);
+      z-index: 2000;
+    }
+
+    .close-slider-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .slider {
+        width: 100%;
+        left: -100%;
+      }
+
+      .open-slider-btn {
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        transform: none;
+        transform-origin: initial;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <button class="open-slider-btn" onclick="toggleSlider()">Open Slider</button>
+    <div class="slider" id="slider">
+      <button class="close-slider-btn" onclick="toggleSlider()">Close</button>
+      <iframe src="https://dovien.netlify.app" frameborder="0"></iframe>
+    </div>
+  </div>
+  
+  <script>
+    function toggleSlider() {
+      var slider = document.getElementById('slider');
+      var openSliderBtn = document.querySelector('.open-slider-btn');
+      slider.style.left = slider.style.left === '0%' ? '-90%' : '0%';
+      openSliderBtn.style.display = openSliderBtn.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
