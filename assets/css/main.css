@@ -682,11 +682,17 @@ width: 100%; /* Set the width to 100% */
   .hero-animated .animated {
     max-width: 45%;
   }
+  .hero-animated img{
+    width: 380px;
+  }
 }
 
 @media (max-width: 991px) {
   .hero-animated .animated {
     max-width: 60%;
+  }
+  .hero-animated img{
+    width: 380px;
   }
 }
 
@@ -743,6 +749,9 @@ width: 100%; /* Set the width to 100% */
 @media (max-width: 640px) {
   .hero-animated h2 {
     font-size: 32px;
+  }
+  .hero-animated img{
+    width: 380px;
   }
 
   .hero-animated p {
