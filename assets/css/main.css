@@ -694,6 +694,9 @@ width: 100%; /* Set the width to 100% */
   .hero-animated .animated {
     max-width: 80%;
   }
+  .hero-animated img{
+    width: 380px;
+  }
 }
 
 .hero-animated .btn-get-started {
