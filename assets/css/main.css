@@ -670,7 +670,9 @@ width: 100%; /* Set the width to 100% */
   font-size: 20px;
   font-weight: 400;
 }
-
+.hero-animated img{
+  width: 410px;
+}
 .hero-animated .animated {
   margin-bottom: 60px;
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
