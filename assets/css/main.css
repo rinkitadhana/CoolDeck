@@ -1168,6 +1168,7 @@ width: 100%; /* Set the width to 100% */
   transition: 0.3s;
 }
 .featured-services .service-item .icon img {
+ 
   margin-top: 10px;
   margin-bottom: 5px;
   height: 42px;

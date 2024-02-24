@@ -1,3 +1,6 @@
+
+
+
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -71,21 +74,18 @@
 
 
 .custom-container {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
   background-color: white;
   border-radius: 7px;
   width: 90%; /* Width covering 80% of the page */
   margin: 0 auto; /* Centering the box horizontally */
-  border: 2px solid #ccc;
   padding: 20px;
   overflow: hidden; /* To contain floated elements */
   transition: all 0.3s ease;
   box-sizing: border-box; /* Include padding and border in the width */
 }
 
-.custom-container:hover {
-  transform: scale(1.0); /* Increase scale on hover */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
+
 
 .custom-image {
   float: left;
@@ -138,7 +138,7 @@
   border: none;
   display: flex;
   border-radius: 5px;
-  box-shadow: 0 0 6px rgba(54, 54, 54, 0.5);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .inner-box {
@@ -148,7 +148,6 @@
 
 .left-box, .right-box {
   background-color: white;
-  border: solid 1px rgb(82, 82, 82,0.5);
   border-radius: 5px;
   padding: 10px;
   
@@ -179,11 +178,13 @@
   background-color: white;
   border: solid 1px rgb(172, 172, 172);
   border-radius: 5px;
-  box-shadow: 0px 0px 7px rgb(153, 153, 153);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
   width: calc(33.33% - 20px); /* 20px is the margin between images */
   margin-bottom: 20px;
 }
 .my-image img {
+  border-bottom: solid 1px rgb(172, 172, 172);
+
   width: 100%;
   height: auto;
 }
@@ -224,11 +225,12 @@
   background-color: white;
   border: solid 1px rgb(173, 173, 173);
   border-radius: 5px;
-  box-shadow: 0px 0px 8px rgb(138, 138, 138);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
   margin: 20px;
   text-align: center;
 }
 .yo-image-container img {
+  border-bottom: solid 1px rgb(172, 172, 172);
   width: 300px; /* Adjust as needed */
   height: auto;
   display: block;
@@ -240,6 +242,7 @@
 }
 
 .yo-image-container h5{
+  margin-top: 10px;
   font-weight: 550;
 }
 
