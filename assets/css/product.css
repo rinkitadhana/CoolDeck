@@ -7,7 +7,7 @@
 .eight h1 {
   text-align:center;
   margin-bottom: 30px;
- 
+  margin-top: -60px;
   text-transform:uppercase;
   font-size:26px; letter-spacing:1px;
   font-weight: 550;
@@ -76,7 +76,6 @@
 .custom-container {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
   background-color: white;
-  border-radius: 7px;
   width: 90%; /* Width covering 80% of the page */
   margin: 0 auto; /* Centering the box horizontally */
   padding: 20px;
@@ -137,7 +136,6 @@
   margin: 30px auto; /* Center the box horizontally */
   border: none;
   display: flex;
-  border-radius: 5px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
 }
 
@@ -148,7 +146,6 @@
 
 .left-box, .right-box {
   background-color: white;
-  border-radius: 5px;
   padding: 10px;
   
 
@@ -176,14 +173,12 @@
 }
 .my-image {
   background-color: white;
-  border: solid 1px rgb(172, 172, 172);
   border-radius: 5px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
   width: calc(33.33% - 20px); /* 20px is the margin between images */
   margin-bottom: 20px;
 }
 .my-image img {
-  border-bottom: solid 1px rgb(172, 172, 172);
 
   width: 100%;
   height: auto;
@@ -223,14 +218,12 @@
 }
 .yo-image-container {
   background-color: white;
-  border: solid 1px rgb(173, 173, 173);
   border-radius: 5px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
   margin: 20px;
   text-align: center;
 }
 .yo-image-container img {
-  border-bottom: solid 1px rgb(172, 172, 172);
   width: 300px; /* Adjust as needed */
   height: auto;
   display: block;
