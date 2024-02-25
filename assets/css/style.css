@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #ffffff;
+  color: #0ea2bd;
   text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 50px;
+  max-height: 123px;
 }
 
 /*--------------------------------------------------------------
@@ -285,6 +285,7 @@ h6 {
 }
 
 .navbar-mobile ul {
+  border-radius: 15px;
   display: block;
   position: absolute;
   top: 55px;
@@ -325,6 +326,7 @@ h6 {
 .navbar-mobile .getstarted:focus {
   margin: 15px;
   color: #0ea2bd;
+  display: none;
   padding-left: 15px;
 }
 
@@ -411,7 +413,7 @@ h6 {
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 700;
 }
 
@@ -421,8 +423,11 @@ h6 {
 
 #hero p {
   width: 80%;
+  font-size: 17px;
+  font-weight: 500;
+
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
+  margin: 30px auto 30px auto;
   color: #fff;
 }
 
@@ -867,6 +872,7 @@ color: #333;
 }
 
 .faq .faq-list a {
+  color: #474747;
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -1321,3 +1327,8 @@ width: 100%; /* Set the width to 100% */
 
 
 /*------CALL OPTION END------*/
+
+
+
+
+
